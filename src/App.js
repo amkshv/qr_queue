@@ -1,12 +1,16 @@
 import React from 'react';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
+import Queue from "./components/Queue/Queue";
+import  "./App.css"
+  
+
+class App extends React.Component {
+  render() {
+    return (
+      <Queue />
       
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
