@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import QrReader from 'react-qr-scanner';
 import './qr_code.css';
+import Queue from './Queue/Queue';
 
 class Qr_code extends Component {
 	state = {
@@ -58,6 +59,8 @@ class Qr_code extends Component {
 			this.checkResult();
 		}
 		return (
+			<>
+			<Queue/>
 			<div className="section_qr">
 				<div className="section__qr_reader">
 					 <QrReader
@@ -70,6 +73,7 @@ class Qr_code extends Component {
 					{/* {console.log(this.state.result)} */}
 				</div>
 			</div>
+			</>
 		);
 	}
 }

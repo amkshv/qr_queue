@@ -7,8 +7,7 @@ class QueueRender extends React.Component {
     renderQueue = () => {
         // console.log(this.props)
         if (this.props.users.id === 1) {
-            console.log(this.props.users);
-            return <div className="queue"> <div>{this.props.users.id }</div> </div>
+            return <div className="queue"> <div>{this.props.users.id}</div> </div>
         } else{
             return <div className="queue2"> <div>{this.props.users.id}</div> </div>
         }
