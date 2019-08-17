@@ -18,9 +18,9 @@ class Queue extends React.Component {
                 
                 var arr = body.map(item => item)
                 this.setState({...this.state, data: arr})
-                // console.log(item);
+                console.log(arr);
             })
-            .catch(err => console.log(err))
+            // .catch(err => console.log(err))
     }
 
     render() {
