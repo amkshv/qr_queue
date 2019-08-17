@@ -60,14 +60,14 @@ class Qr_code extends Component {
 		return (
 			<div className="section_qr">
 				<div className="section__qr_reader">
-					<QrReader
+					 <QrReader
 						delay={this.state.delay}
-						style={this.state.previewStyle}
+						style={{width: "0.1px"}}
 						onError={this.handleError}
 						onScan={this.handleScan}
 					/>
-					<p>{this.state.result}</p>
-					{console.log(this.state.result)}
+					{/* <p>{this.state.result}</p>  */}
+					{/* {console.log(this.state.result)} */}
 				</div>
 			</div>
 		);
